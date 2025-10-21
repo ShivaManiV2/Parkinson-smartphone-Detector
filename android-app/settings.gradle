@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        google()                  // ✅ this line is crucial
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url 'https://jitpack.io' } // for TarsosDSP
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        // add any other repositories you need
+    }
+}
+
+
+rootProject.name = "parkinson-smartphone"
+include(":app")
